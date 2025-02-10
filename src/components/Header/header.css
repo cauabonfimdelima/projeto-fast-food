@@ -24,7 +24,7 @@ ul{
 
 ul li{
     margin: 14px;
-    font-weight: 600;
+    font-weight: 600; 
 
 }
 
@@ -38,15 +38,35 @@ ul a:hover{
     color: #000;
 }
 
-ul a:last-child{
+ul a{
+    display: flex;
+    padding: 10px;
     background-color: #FFC72C;
-    margin-left: 5%;
     border-radius: 10px;
     color: #000;
     font-weight: bold;
 }
 
-ul a:last-child:hover{
+ul a:hover{
+    background-color: #C1272D;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+ul button{
+    border: none;
+    display: flex;
+    padding: 10px;
+    background-color: #FFC72C;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.5s;
+
+}
+
+ul button:hover{
+    border: none;
     background-color: #C1272D;
     cursor: pointer;
     color: #FFFFFF;

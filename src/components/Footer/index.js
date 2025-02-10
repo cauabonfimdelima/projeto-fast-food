@@ -15,10 +15,10 @@ function Footer(){
                <span>(21) 12312-1231</span>
                <span>contatofastfood@gmail.com</span>
                 </div>
-
                 <div className='social'>
                 <h3>Siga-nos</h3>
          
+                <a href='#' target='_blank'>GitHub</a>
                 <a href='#' target='_blank'>Linkedin</a>
                 <a href='#' target='_blank'>Instagram</a>
                 <a href='#' target='_blank'>Facebook</a>

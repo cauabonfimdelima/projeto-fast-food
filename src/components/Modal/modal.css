@@ -1,0 +1,91 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    color: #000;
+    /* border: 2px solid blue; */
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ /* border: 1px solid black;    */
+}
+
+.cart-item-button button{
+    background-color: #C1272D;
+    color: #FFFFFF;
+}
+
+.cart-item-button button:hover{
+    background-color: #FFC72C;
+}
+
+.cart-item img{
+    width: 50px;
+    height: 50px;
+}
+
+.input-cart{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-cart label{
+    font-size: 14px;
+    display: flex;
+}
+
+.input-cart input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.buttons-cart{
+    width: 100%;
+
+}
+
+.buttons-cart button{
+    background-color: #C1272D;
+
+    transition: 0.3s;
+}
+
+.buttons-cart button:hover{
+    cursor: pointer;
+    background-color: #FFC72C;
+    transform: translateY(-3px);
+}

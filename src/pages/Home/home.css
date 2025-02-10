@@ -55,6 +55,7 @@ body{
 
 .section-cardapio aside a:hover{
     background-color: #FFC72C;
+    transform: translateY(-5px);
     font-weight: 600;
     color: #000;
 }
@@ -95,8 +96,11 @@ main{
     /* border: 5px solid blue; */
 }
 
-main h2{
+main h3{
     text-align: center;
+    font-size: 36px;
+    margin: 14px 0;
+    
 }
 
 .section-info{
@@ -226,21 +230,33 @@ width: 100%;
         background-color: rgba(0, 0, 0, 0.2);
     }
 
-    .guide-question{
-        /* border: 1px solid blue; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-        margin-bottom: 14px;
+    .guide h3{
+        font-size: 36px;
+        text-align: center;
+        margin: 14px 0;
+        font-weight: bold;
     }
 
 
+    .guide-question{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 14px;
+        margin-left: 5%;
+        background-color: #f8f8f8;  
+    }
 
     .guide-question h2{
         text-align: left;
         user-select: none;
-        width: 80%;
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+  
     }
 
     .guide-question h2:hover{
@@ -248,7 +264,7 @@ width: 100%;
     }
  
     .container-arrow{
-            width: 10%;
+    width: 10%;
     user-select: none;
     display: flex;
     justify-content: center;
@@ -266,18 +282,13 @@ width: 100%;
         width: 30px;
     }
 
-    .container-resposta{
-        display: flex;
-        flex-direction: column;
-       
-    }
 
     .guide-resposta{
-
         line-height: 1.6;
         padding: 10px;
+        width: 90%;
         margin-top: 10px;
-        /* background-color: #f8f8f8;  */
+        background-color: #f8f8f8; 
         border-radius: 5px;
     }
     

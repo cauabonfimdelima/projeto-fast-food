@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import "./header.css";
+import Modal from "../Modal";
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/CartContext";
+
 
 function Header(){
+    const {cart} = useContext(CartContext)
+    const [cartOpen, setCartOpen] = useState(false);
+
     return(
         <header>    
             <div className="logo">
@@ -10,11 +17,14 @@ function Header(){
 
             <nav className="menu-nav">
                 <ul>
-                    <Link><li>Lanches</li></Link>
-                    <Link><li>Bebidas</li></Link>
-                    <Link><li>Entrar</li></Link>
+                    <li>
+                    <button onClick={()=>setCartOpen(true)}>Carrinho ({cart.length})</button>
+                    {cartOpen && <Modal close={()=>setCartOpen(false)}/>}
+                    </li>
+                    <li><Link>Entrar</Link></li>
                 </ul>
             </nav>
+
 
         </header>
     )

@@ -10,27 +10,34 @@ function Home(){
         id: 1,
         pergunta: "Como pedir fast-food de forma rápida e fácil?",
         resposta: [
-                    "✅ 1. Cadastre-se gratuitamente em nosso site.",
-                    "🔑 2. Faça login na sua conta.",
-                    "🍔 3. Escolha seus lanches favoritos e finalize o pedido!"
+                    "1. Cadastre-se gratuitamente em nosso site.\n",
+                    "2. Faça login na sua conta.\n",
+                    "3. Escolha seus lanches favoritos e finalize o pedido!\n"
         ]
     },
     {
         id: 2,
         pergunta: "Quais meios de pagamento o Fast-Food aceita?",
         resposta: [
-                   "💳 Aceitamos cartões de crédito e débito.",
-                "📲 Pagamentos via PIX e boleto.",
-                "💵 Dinheiro para pedidos presenciais."
+                   "Aceitamos cartões de crédito e débito.",
+                " Pagamentos via PIX e boleto.",
+                " Dinheiro para pedidos presenciais."
         ]
     },
     {
         id: 3,
         pergunta: "Como funciona a confirmação da compra?",
         resposta:[
-            "📩 Você recebe um e-mail ou notificação no app.",
-                "📦 O pedido começa a ser preparado imediatamente.",
-                "⏳ Você pode acompanhar o status em tempo real."
+            "Você recebe um e-mail ou notificação no app.",
+                " O pedido começa a ser preparado imediatamente.",
+                " Você pode acompanhar o status em tempo real."
+        ]
+    },
+    {
+        id: 4,
+        pergunta: "Como entrar em contato?",
+        resposta:[
+            "Através do número (21) 12312-1231.",
         ]
     }
 ]
@@ -55,7 +62,7 @@ function Home(){
             <h2>Bem vindo ao nosso</h2>
             <h2><span>Fast Food</span></h2>
             <p>Seja para uma refeição rápida no intervalo do trabalho ou um lanche com os amigos, o <strong>fast-food</strong> é a escolha perfeita para quem busca praticidade sem abrir mão do sabor.</p>
-            <a href="#cardapio">Confira nosso Cardápio</a>
+            <a href="/menu">Confira nosso Cardápio</a>
             </aside>
 
             <article>
@@ -64,7 +71,7 @@ function Home(){
         </section>
 
     <main>
-                <h2>Aqui o cliente é a prioridade!</h2>
+                <h3>Aqui o cliente é a prioridade!</h3>
                 <section className='section-info'> 
                 <div className='info-positivo'>
                 <h2>O que o <span>Fast Food</span> oferece para você?</h2>
@@ -92,7 +99,7 @@ function Home(){
 
 
                 <section className='guide'>
-                       
+                        <h3 className='title-guide'>Como podemos te ajudar?</h3>
                         {guias.map((guia)=>(
                             <div key={guia.id} className='guide-question'>
                                 
@@ -100,17 +107,18 @@ function Home(){
                                 setAberto(aberto === guia.id ? null : guia.id)
                             }>
                             {guia.pergunta}</h2>
-                            <div className='container-arrow'>
+                            {/* <div className='container-arrow'>
                             <img onClick={()=>
                                 setAberto(aberto === guia.id ? null : guia.id)
                              }
                             className='arrow' src='/assets/down-arrow.png' />
-                            </div>
+                            </div> */}
                             {aberto  === guia.id &&(
                             <div className='container-resposta'>
-                          <p className='guide-resposta'>{guia.resposta}</p>
-                            </div>
+                            <p className='guide-resposta'>{guia.resposta}</p>
+                          
                             
+                            </div>
                             )
                             }
                             </div>
@@ -120,7 +128,7 @@ function Home(){
 
 
 
-            <h2>Nosso Cardápio</h2>
+            {/* <h3>Nosso Cardápio</h3>
             <div className='cardapio' id='cardapio'>
                {produtos.map((produto)=>(
                     <div key={produto.id} className='produto'>
@@ -146,8 +154,8 @@ function Home(){
 
                 </div>
                 <div className='div-mais-opcoes'>
-                    <a href='#' className='mais-opcoes'>Mais opções</a>
-                </div>
+                    <a href='/menu' className='mais-opcoes'>Mais opções</a>
+                </div> */}
 
     </main>
 
