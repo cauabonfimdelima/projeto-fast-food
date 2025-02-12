@@ -5,7 +5,6 @@ import { CartContext } from '../../context/CartContext';
 
 function Menu(){
 
-
     const {addToCart} = useContext(CartContext);
 
     const [produtos, setProdutos] = useState([
@@ -36,9 +35,10 @@ function Menu(){
                 <span>{produto.preco}</span>
   
                 <div className="buttons">
-                  <button>Comprar</button>
+                  {/* <button>Comprar</button> */}
                   <button onClick={() => addToCart(produto)}>
-                    <img src="../assets/cart.png" alt="Adicionar ao carrinho" />
+                    Adicionar ao carrinho
+                    {/* <img src="../assets/cart.png" alt="Adicionar ao carrinho" /> */}
                   </button>
                 </div>
               </div>

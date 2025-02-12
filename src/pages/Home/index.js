@@ -10,27 +10,21 @@ function Home(){
         id: 1,
         pergunta: "Como pedir fast-food de forma rápida e fácil?",
         resposta: [
-                    "1. Cadastre-se gratuitamente em nosso site.\n",
-                    "2. Faça login na sua conta.\n",
-                    "3. Escolha seus lanches favoritos e finalize o pedido!\n"
+                    "Na página de cardápio, adicione o produto ao carrinho e confirme seu pedido.",
         ]
     },
     {
         id: 2,
         pergunta: "Quais meios de pagamento o Fast-Food aceita?",
         resposta: [
-                   "Aceitamos cartões de crédito e débito.",
-                " Pagamentos via PIX e boleto.",
-                " Dinheiro para pedidos presenciais."
+                   "Aceitamos cartões de crédito e débito, PIX e Dinheiro.",
         ]
     },
     {
         id: 3,
         pergunta: "Como funciona a confirmação da compra?",
         resposta:[
-            "Você recebe um e-mail ou notificação no app.",
-                " O pedido começa a ser preparado imediatamente.",
-                " Você pode acompanhar o status em tempo real."
+            "Através do atendimento no WhatsApp.",
         ]
     },
     {

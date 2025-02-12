@@ -21,7 +21,7 @@ function Header(){
                     <button onClick={()=>setCartOpen(true)}>Carrinho ({cart.length})</button>
                     {cartOpen && <Modal close={()=>setCartOpen(false)}/>}
                     </li>
-                    <li><Link>Entrar</Link></li>
+                    {/* <li><Link to="/signin">Entrar</Link></li> */}
                 </ul>
             </nav>
 

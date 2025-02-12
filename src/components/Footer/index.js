@@ -18,10 +18,8 @@ function Footer(){
                 <div className='social'>
                 <h3>Siga-nos</h3>
          
-                <a href='#' target='_blank'>GitHub</a>
-                <a href='#' target='_blank'>Linkedin</a>
-                <a href='#' target='_blank'>Instagram</a>
-                <a href='#' target='_blank'>Facebook</a>
+                <a href='https://github.com/cauabonfimdelima' target='_blank'>GitHub</a>
+                <a href='https://www.linkedin.com/in/cau%C3%A3-bonfim-de-lima-891b30304/' target='_blank'>Linkedin</a>
        
                 </div>
 

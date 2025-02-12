@@ -249,6 +249,10 @@ width: 100%;
         margin-left: 5%;
         background-color: #f8f8f8;  
     }
+    .guide-question:hover{
+
+        opacity: 0.8; 
+    }
 
     .guide-question h2{
         text-align: left;
