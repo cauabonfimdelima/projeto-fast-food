@@ -21,7 +21,7 @@ function Modal({ close }) {
         }).join("")    
 
         const message = encodeURIComponent(cartItems)
-        const phone = "5521979697575"
+        const phone = "551132303223"
 
         const endereco = encodeURIComponent(inputEndereco.value.trim());
         window.open(`https://wa.me/${phone}?text=${message} Endereço: ${inputEndereco.value}`, "_blank")
