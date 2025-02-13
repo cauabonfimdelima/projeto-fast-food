@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-
+import { toast } from "react-toastify";
 export const CartContext = createContext();
 
 export function CartProvider({children}){
@@ -23,6 +23,8 @@ export function CartProvider({children}){
                 : item
             ).filter(item => item.quantidade > 0)
         );
+        toast.success("Removido com sucesso!")
+
         }
 
 
@@ -38,6 +40,7 @@ export function CartProvider({children}){
                 : cartItem
                 )
             }else{
+                toast.success("Adicionado ao carrinho!");
                 return [...cart, {...item, quantidade: 1}];
             }
     });

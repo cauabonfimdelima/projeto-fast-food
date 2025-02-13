@@ -2,6 +2,9 @@ import { useContext } from 'react';
 import './modal.css';
 import { CartContext } from '../../context/CartContext';
 
+
+import { ToastContainer, toast } from 'react-toastify';
+
 function Modal({ close }) {
     const { cart, removeFromCart } = useContext(CartContext);
 
@@ -9,7 +12,7 @@ function Modal({ close }) {
         const inputEndereco = document.querySelector(".input-endereco")
 
         if (inputEndereco.value ===""){
-            alert("Insira um endereço")
+            toast.warn("Insira um endereço válido!");
             return;
         }
 
