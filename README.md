@@ -20,8 +20,7 @@ Finalizei mais um projeto pessoal, desta vez focado em facilitar pedidos para cl
 ✔ Conectar clientes diretamente à empresa via WhatsApp
 
 📌 Confira o projeto:
-🔗 Repositório GitHub: [insira o link]
-🚀 Deploy: [insira o link]
+🚀 Deploy: projeto-fast-food-qfmrncafb-caua-bonfim-de-limas-projects.vercel.app
 
 Ficarei feliz em receber feedbacks! O que acharam? 😃
 
